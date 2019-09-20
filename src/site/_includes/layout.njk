@@ -18,6 +18,8 @@
       href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic|Roboto+Condensed:400,700|Roboto+Mono:400,500|Material+Icons"
     />
     <link rel="stylesheet" href="/app.css" />
+    {# Module code is loaded deferred (the "asynchronous" case in the polyfill docs) but we only load other module code anyway. #}
+    <script type="module" src="/lib/webcomponents/webcomponents-loader.js"></script>
     <script type="module" src="/app.js"></script>
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
